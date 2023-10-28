@@ -21,9 +21,9 @@ public class FabricaDeConexao {
             Connection conexao = DriverManager.getConnection(url, user, senha);
             return conexao;
         } catch(ClassNotFoundException erro) {
-             logger.log(Level.SEVERE, "Driver MySQL não encontrado!",erro);
+             logger.log(Level.SEVERE, "Driver MySQL não encontrado!", erro);
         } catch (SQLException erro) {
-            logger.log(Level.SEVERE, "Erro ao efetuar a conexão com a base de dados! ",erro);
+            logger.log(Level.SEVERE, "Erro ao efetuar a conexão com a base de dados! ", erro);
         }
         return null;
     }
@@ -33,7 +33,7 @@ public class FabricaDeConexao {
         try {
             conexao.close();
         } catch (Exception erro) {
-            logger.log(Level.SEVERE, "Erro ao fechar a conexão com a base de dados! ",erro);
+            logger.log(Level.SEVERE, "Erro ao fechar a conexão com a base de dados! ", erro);
         }
     }
     
