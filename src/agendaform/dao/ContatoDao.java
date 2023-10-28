@@ -39,7 +39,7 @@ public class ContatoDao {
             return contatos;
 
         } catch (Exception erro) {
-            logger.log(Level.SEVERE, "Erro ao efetuar a busca de contatos! ",erro);
+            logger.log(Level.SEVERE, "Erro ao efetuar a busca de contatos! ", erro);
         }
         return null;
     }
@@ -54,7 +54,7 @@ public class ContatoDao {
             pstmt.execute();
             logger.info("Sucesso ao efetuar a inserção de contato!");
         } catch (Exception erro) {
-            logger.log(Level.SEVERE, "Erro ao efetuar a inserção de contato! ",erro);
+            logger.log(Level.SEVERE, "Erro ao efetuar a inserção de contato! ", erro);
         }
     }
     
@@ -70,7 +70,7 @@ public class ContatoDao {
             logger.info("Sucesso ao efetuar a atualização de contato!");
         } catch (Exception erro) {
             System.out.println("Erro ao efetuar a inserção de contato - " + erro.getMessage());
-            logger.log(Level.SEVERE, "Erro ao efetuar a atualização deste contato! ",erro);
+            logger.log(Level.SEVERE, "Erro ao efetuar a atualização deste contato! ", erro);
         }
     }
     
@@ -82,7 +82,7 @@ public class ContatoDao {
             pstmt.execute();
             logger.info("Sucesso ao deletar o contato!");
         } catch (Exception erro) {
-            logger.log(Level.SEVERE, "Erro ao deletar este contato! ",erro);
+            logger.log(Level.SEVERE, "Erro ao deletar este contato! ", erro);
         }
     }
 }
